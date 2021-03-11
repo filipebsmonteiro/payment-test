@@ -13,6 +13,9 @@ Pré requisitos para rodar o projeto:
 - Docker
 - Dockercompose
 
+## Comandos
+Comandos em um arquivo na RAIZ DO PROJETO: prepare-enviromnent.sh
+
 Comandos para executar após baixar o projeto:
 
 - docker-compose up -d
@@ -27,8 +30,6 @@ Comandos para executar após baixar o projeto:
 - php artisan optimize
 - php vendor/bin/phpunit
 - php artisan serve --host 0.0.0.0 --port 8000
-
-COMANDOS DISPONÍVEIS em um arquivo na RAIZ DO PROJETO: prepare-enviromnent.sh
 
 ## Endpoints
 Todos os endpoints estão configurados em uma Collection do Postman, que pode ser importado
