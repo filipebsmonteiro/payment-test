@@ -72,6 +72,8 @@ class ProcessTransfer implements ShouldQueue
         $this->transaction->update([
             'status' => self::STATUS_PROCESSADO
         ]);
+
+        dispatch(new NotifyTransaction($this->transaction));
     }
 
     private function hasAuthorization()
